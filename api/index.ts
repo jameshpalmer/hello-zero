@@ -3,10 +3,6 @@ import { setCookie } from "hono/cookie";
 import { handle } from "hono/vercel";
 import { SignJWT } from "jose";
 
-export const config = {
-  runtime: "edge",
-};
-
 export const app = new Hono().basePath("/api");
 
 // See seed.sql
